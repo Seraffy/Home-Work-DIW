@@ -1,0 +1,27 @@
+.header-img-heigth {
+  height: 100px;
+  margin: 0px;
+}
+.nav-img{
+  height: 60px;
+  margin: 0px;
+ 
+}
+
+.maxcaro {
+  max-height: 450px;
+}
+
+.max-view-items {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.limite {
+  overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp:3; 
+-webkit-box-orient: vertical; 
+cursor:pointer;
+}
