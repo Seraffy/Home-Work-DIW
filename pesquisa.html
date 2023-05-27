@@ -14,13 +14,15 @@
 <body>
   <header class="row bg-dark bg-opacity-50 mb-5  ">
       <div class="col-lg-2 col-md-3  pt-2 pb-2 ">
-        <img class="rounded header-img-heigth img-fluid"
-          src="https://i.pinimg.com/736x/da/39/0a/da390a7d06548be59c0f863117c9b93e.jpg" alt="Logo">
+        <a href="index.html">
+          <img class="rounded header-img-heigth img-fluid"
+            src="https://i.pinimg.com/736x/da/39/0a/da390a7d06548be59c0f863117c9b93e.jpg" alt="Logo" >
+        </a>
       </div>
       <div class="col-lg-5 col-md-3">
         <p class="mt-2 text-md-center">Welcome Guest To GAIN STORE </p>
         <div>
-          <input onkeyup="searchItens()" type="text" placeholder="Search Here" class="rounded mt-4 mr-0 row-md-12 col-md-8 col-sm-12" id="barrapesquisa">
+          <input type="text" placeholder="Search Here" class="rounded mt-4 mr-0 row-md-12 col-md-8 col-sm-12" id="search-bar">
           <button class="btn btn-dark endsearch" type="submit">Search</button>
         </div>
       </div>
@@ -70,140 +72,135 @@
     <!-- Start Main -->
     <main class="col-lg-12 mb-5 text-md-center container">
         
-      <div class="row row-cols-1 row-cols-md-3 g-4 ">
-        <div class="col ">
-          <div class="card h-100">
-          <a  href="detalhes.html?${produto.id}" class="card" target="_blank" id="${produto.id}">
-              <img class="p-3"
-              src="${produto.image}"
-              class="card-img-top" alt="Produtos Eletronicos">
-          </a>    
-              <div class="card-body">
-                <h5 class="card-title">${produto.title}</h5>
-                <p class="card-text limite">Category: ${produto.category}</p>
-                  <p> In Stock: ${produto.rating.count}</p>
-                  <p> Base Colour: ${produto.baseColour}</p>
-                  <p> Season ${produto.season}</p>
-                <p>RS$:${produto.price},00</p>
-                <span>
-                  <i>
-                    Rating: ${produto.rating.rate}/5
-                  </i>
-                </span>
-              </div>
-          </div>
-        </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4 " id="cards-pesquisa">
         <div class="col">
-          <div class="card h-100">
-          <a  href="detalhes.html?${produto.id}" class="card" target="_blank" id="${produto.id}">
-              <img class="p-3"
-              src="${produto.image}"
-              class="card-img-top" alt="Produtos Eletronicos">
+          <div class="card card-number h-100">
+          <a href="detalhes.html?8118" class="card" target="_blank" id="8118">
+              <img class="p-3" src="http://assets.myntassets.com/v1/images/style/properties/34e4495ae4704be6cd99ecfcf9314487_images.jpg" alt="Produtos Eletronicos">
           </a>    
               <div class="card-body">
-                <h5 class="card-title">${produto.title}</h5>
-                <p class="card-text limite">Category: ${produto.category}</p>
-                  <p> In Stock: ${produto.rating.count}</p>
-                  <p> Base Colour: ${produto.baseColour}</p>
-                  <p> Season ${produto.season}</p>
-                <p>RS$:${produto.price},00</p>
+                <h5 class="card-title">Fastrack Men Khaki Canvas Brown Belts</h5>
+                <p class="card-text limite">Category: Accessories - Belts</p>
+                  <p> In Stock: 558</p>
+                  <p> Base Colour: Brown</p>
+                  <p> Season Winter</p>
+                <p>RS$:395,00</p>
                 <span>
                   <i>
-                    Rating: ${produto.rating.rate}/5
+                    Rating: 5/5
                   </i>
                 </span>
               </div>
           </div>
         </div>
+
         <div class="col">
-          <div class="card h-100">
-          <a  href="detalhes.html?${produto.id}" class="card" target="_blank" id="${produto.id}">
-              <img class="p-3"
-              src="${produto.image}"
-              class="card-img-top" alt="Produtos Eletronicos">
+          <div class="card card-number h-100">
+          <a href="detalhes.html?8119" class="card" target="_blank" id="8119">
+              <img class="p-3" src="http://assets.myntassets.com/v1/images/style/properties/4acd551b2d5a6cbaaea3537f5b5fd193_images.jpg" alt="Produtos Eletronicos">
           </a>    
               <div class="card-body">
-                <h5 class="card-title">${produto.title}</h5>
-                <p class="card-text limite">Category: ${produto.category}</p>
-                  <p> In Stock: ${produto.rating.count}</p>
-                  <p> Base Colour: ${produto.baseColour}</p>
-                  <p> Season ${produto.season}</p>
-                <p>RS$:${produto.price},00</p>
+                <h5 class="card-title">Fastrack Men Canvas Red Stitches Grey Belts</h5>
+                <p class="card-text limite">Category: Accessories - Belts</p>
+                  <p> In Stock: 115</p>
+                  <p> Base Colour: Grey</p>
+                  <p> Season Winter</p>
+                <p>RS$:395,00</p>
                 <span>
                   <i>
-                    Rating: ${produto.rating.rate}/5
+                    Rating: 3.9/5
                   </i>
                 </span>
               </div>
           </div>
         </div>
+
         <div class="col">
-          <div class="card h-100">
-          <a  href="detalhes.html?${produto.id}" class="card" target="_blank" id="${produto.id}">
-              <img class="p-3"
-              src="${produto.image}"
-              class="card-img-top" alt="Produtos Eletronicos">
+          <div class="card card-number h-100">
+          <a href="detalhes.html?8120" class="card" target="_blank" id="8120">
+              <img class="p-3" src="http://assets.myntassets.com/v1/images/style/properties/Fastrack-Men-Black-Belt_c9ba14b6d143ff852681e8c0b606b040_images.jpg" alt="Produtos Eletronicos">
           </a>    
               <div class="card-body">
-                <h5 class="card-title">${produto.title}</h5>
-                <p class="card-text limite">Category: ${produto.category}</p>
-                  <p> In Stock: ${produto.rating.count}</p>
-                  <p> Base Colour: ${produto.baseColour}</p>
-                  <p> Season ${produto.season}</p>
-                <p>RS$:${produto.price},00</p>
+                <h5 class="card-title">Fastrack Men Black Belt</h5>
+                <p class="card-text limite">Category: Accessories - Belts</p>
+                  <p> In Stock: 78</p>
+                  <p> Base Colour: Black</p>
+                  <p> Season Winter</p>
+                <p>RS$:595,00</p>
                 <span>
                   <i>
-                    Rating: ${produto.rating.rate}/5
+                    Rating: 2.4/5
                   </i>
                 </span>
               </div>
           </div>
         </div>
+
         <div class="col">
-          <div class="card h-100">
-          <a  href="detalhes.html?${produto.id}" class="card" target="_blank" id="${produto.id}">
-              <img class="p-3"
-              src="${produto.image}"
-              class="card-img-top" alt="Produtos Eletronicos">
+          <div class="card card-number h-100">
+          <a href="detalhes.html?8121" class="card" target="_blank" id="8121">
+              <img class="p-3" src="http://assets.myntassets.com/v1/images/style/properties/Fastrack-Men-White-Stiches-Brown-Belts_d65df135bf78b95f729f5e0b4868bd3d_images.jpg" alt="Produtos Eletronicos">
           </a>    
               <div class="card-body">
-                <h5 class="card-title">${produto.title}</h5>
-                <p class="card-text limite">Category: ${produto.category}</p>
-                  <p> In Stock: ${produto.rating.count}</p>
-                  <p> Base Colour: ${produto.baseColour}</p>
-                  <p> Season ${produto.season}</p>
-                <p>RS$:${produto.price},00</p>
+                <h5 class="card-title">Fastrack Men Brown Belt</h5>
+                <p class="card-text limite">Category: Accessories - Belts</p>
+                  <p> In Stock: 281</p>
+                  <p> Base Colour: Brown</p>
+                  <p> Season Winter</p>
+                <p>RS$:595,00</p>
                 <span>
                   <i>
-                    Rating: ${produto.rating.rate}/5
+                    Rating: 4.3/5
                   </i>
                 </span>
               </div>
           </div>
         </div>
+
         <div class="col">
-          <div class="card h-100">
-          <a  href="detalhes.html?${produto.id}" class="card" target="_blank" id="${produto.id}">
-              <img class="p-3"
-              src="${produto.image}"
-              class="card-img-top" alt="Produtos Eletronicos">
+          <div class="card card-number h-100">
+          <a href="detalhes.html?8122" class="card" target="_blank" id="8122">
+              <img class="p-3" src="http://assets.myntassets.com/v1/images/style/properties/678c9d1244fb5f2b4c777647f86f798d_images.jpg" alt="Produtos Eletronicos">
           </a>    
               <div class="card-body">
-                <h5 class="card-title">${produto.title}</h5>
-                <p class="card-text limite">Category: ${produto.category}</p>
-                  <p> In Stock: ${produto.rating.count}</p>
-                  <p> Base Colour: ${produto.baseColour}</p>
-                  <p> Season ${produto.season}</p>
-                <p>RS$:${produto.price},00</p>
+                <h5 class="card-title">Fastrack Men Non Leather Black Belts</h5>
+                <p class="card-text limite">Category: Accessories - Belts</p>
+                  <p> In Stock: 254</p>
+                  <p> Base Colour: Black</p>
+                  <p> Season Winter</p>
+                <p>RS$:595,00</p>
                 <span>
                   <i>
-                    Rating: ${produto.rating.rate}/5
+                    Rating: 3.3/5
                   </i>
                 </span>
               </div>
           </div>
         </div>
+
+        <div class="col">
+          <div class="card card-number h-100">
+          <a href="detalhes.html?8123" class="card" target="_blank" id="8123">
+              <img class="p-3" src="http://assets.myntassets.com/v1/images/style/properties/860a10f346d9bebd6edfc2ee22ab6284_images.jpg" alt="Produtos Eletronicos">
+          </a>    
+              <div class="card-body">
+                <h5 class="card-title">Fastrack Men Non Leather Choclate Fanch Brass Buckles Brown Belts</h5>
+                <p class="card-text limite">Category: Accessories - Belts</p>
+                  <p> In Stock: 327</p>
+                  <p> Base Colour: Brown</p>
+                  <p> Season Winter</p>
+                <p>RS$:595,00</p>
+                <span>
+                  <i>
+                    Rating: 2.1/5
+                  </i>
+                </span>
+              </div>
+          </div>
+        </div>
+
       </div>
+
     </main>  
     <!-- End Main -->
 
@@ -289,6 +286,7 @@
 
     
   <script src="pesquisa.js"></script>
+  
 </body>
   
 </html>
